@@ -1,54 +1,25 @@
+function StoriesItem(props){
+    return(
+        <div class="story-box">
+            <div class="story-pic">
+                <img class="story-img" src={props.image} />
+            </div>
+            <p class="story-text">{props.name}</p>
+        </div>
+    );    
+}
+
 export default function Stories(){
     return (
-        <div class="stories">                   
-            <div class="story-box">
-                <div class="story-pic">
-                    <img class="story-img" src="images/adaman.png" />
-                </div>
-                <p class="story-text">adaman</p>
-            </div>
-            <div class="story-box">
-                <div class="story-pic">
-                    <img class="story-img" src="images/akari.png" />
-                </div>
-                <p class="story-text">akari</p>
-            </div>
-            <div class="story-box">
-                <div class="story-pic">
-                    <img class="story-img" src="images/irida.png" />
-                </div>
-                <p class="story-text">irida</p>
-            </div>
-            <div class="story-box">
-                <div class="story-pic">
-                    <img class="story-img" src="images/kamado.png" />
-                </div>
-                <p class="story-text">kamado</p>
-            </div>
-            <div class="story-box">
-                <div class="story-pic">
-                    <img class="story-img" src="images/laventon.png" />
-                </div>
-                <p class="story-text">laventon</p>
-            </div>
-            <div class="story-box">
-                <div class="story-pic">
-                    <img class="story-img" src="images/lian.png" />
-                </div>
-                <p class="story-text">lian</p>
-            </div>
-            <div class="story-box">
-                <div class="story-pic">
-                    <img class="story-img" src="images/melli.png" />
-                </div>
-                <p class="story-text">melli</p>
-            </div>
-            <div class="story-box">
-                <div class="story-pic">
-                    <img class="story-img" src="images/rei.png" />
-                </div>
-                <p class="story-text">rei</p>
-            </div>                    
+        <div class="stories">     
+            <StoriesItem name="adaman" image="images/adaman.png"/>
+            <StoriesItem name="akari" image="images/akari.png"/>
+            <StoriesItem name="irida" image="images/irida.png"/>
+            <StoriesItem name="kamado" image="images/kamado.png"/>
+            <StoriesItem name="laventon" image="images/laventon.png"/>
+            <StoriesItem name="lian" image="images/lian.png"/>
+            <StoriesItem name="melli" image="images/melli.png"/>
+            <StoriesItem name="rei" image="images/rei.png"/>                  
             <ion-icon name="chevron-forward-circle"></ion-icon>              
         </div>
     );

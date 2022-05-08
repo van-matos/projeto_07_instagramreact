@@ -134,7 +134,7 @@ body {
 .story-pic {
     width: 66px;
     height: 66px;
-    background-image: url("stories_background.jpg");
+    background-image: url("images/stories_background.jpg");
     background-size: cover;
     position: relative;
 }
