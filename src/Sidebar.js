@@ -26,6 +26,8 @@ function TopFriendSuggestion() {
 }
 
 export default function Sidebar() {
+    const listSuggestions = [{name: "calaba", image: "images/calaba.png"},{name: "gaeric", image: "images/gaeric.png"},{name: "iscan", image: "images/iscan.png"},{name: "mai", image: "images/mai.png"},{name: "palina", image: "images/palina.png"}]
+    
     return(
         <div class="side-bar">
             <TopFriendSuggestion />
@@ -33,11 +35,8 @@ export default function Sidebar() {
                 <p class="heading-left">Sugestões para você</p>
                 <p class="heading-right">Ver tudo</p>
             </div>
-            <FriendSuggestion name="calaba" image="images/calaba.png"/>
-            <FriendSuggestion name="gaeric" image="images/gaeric.png"/>
-            <FriendSuggestion name="iscan" image="images/iscan.png"/>
-            <FriendSuggestion name="mai" image="images/mai.png"/>
-            <FriendSuggestion name="palina" image="images/palina.png"/>
+            {listSuggestions.map(suggestion => <FriendSuggestion name={suggestion.name} image={suggestion.image} />)}
+            
             <div class="fine-print">
                 <p class="fine-text">Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes • Hashtags • Idioma</p>
             </div>
