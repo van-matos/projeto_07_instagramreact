@@ -23,5 +23,5 @@ export default function Topbar(){
                 <ion-icon name="paper-plane-outline"></ion-icon>
             </div>
         </div>
-        );
+    );
 }
