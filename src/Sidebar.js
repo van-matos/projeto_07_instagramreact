@@ -6,7 +6,13 @@ import FinePrint from './FinePrint'
 export default function Sidebar() { 
     const topSuggestion = {name: "arezu", realname: "Arezu", image: "images/arezu.png"}
     
-    const listSuggestions = [{name: "calaba", image: "images/calaba.png"},{name: "gaeric", image: "images/gaeric.png"},{name: "iscan", image: "images/iscan.png"},{name: "mai", image: "images/mai.png"},{name: "palina", image: "images/palina.png"}]
+    const listSuggestions = [
+        {name: "calaba", image: "images/calaba.png"},
+        {name: "gaeric", image: "images/gaeric.png"},
+        {name: "iscan", image: "images/iscan.png"},
+        {name: "mai", image: "images/mai.png"},
+        {name: "palina", image: "images/palina.png"}
+    ]
     
     return(
         <div class="side-bar">
